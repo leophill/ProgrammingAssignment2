@@ -1,7 +1,10 @@
 ## The code caches the Inverse of a Matrix (which is assumed to be invertible) to help avoid
 ## the costly operation of computing the Inverse each time, especially if it was calculated
 ## during a previous run.
-## A typical call to get or set the cached Inverse of Matrix MX is : cacheSolve(makeCacheMatrix(MX))
+## A typical call to get or set the cached Inverse of Matrix MX is : 
+## CX <- makeCacheMatrix(MX) 
+## IX <- cacheSolve(CX)
+## IX <- cacheSolve(CX)
 
 ## makeCacheMatrix creates a special "Matrix", which is a list containing four main functions to
 ## get or set the value of the Matrix, to get or set the value of the Inverse Matrix, respectively.
